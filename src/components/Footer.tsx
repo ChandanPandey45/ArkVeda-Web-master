@@ -143,7 +143,7 @@ export default function Footer() {
                     className="flex items-start gap-3 text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 group"
                   >
                     <Mail className="w-4 h-4 mt-0.5 shrink-0 text-solar-yellow/60 group-hover:text-solar-yellow transition-colors" />
-                    <span>info.contactchandan@gmail.com</span>
+                    <span>rishabhpandey90057@gmail.com</span>
                   </a>
                 </li>
                 <li>
@@ -158,7 +158,7 @@ export default function Footer() {
                 <li>
                   <div className="flex items-start gap-3 text-sm text-white/60">
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-solar-yellow/60" />
-                    <span>Bangalore, Karnataka, India</span>
+                    <span>Gorakhpur, Uttar Pradesh, India</span>
                   </div>
                 </li>
               </ul>

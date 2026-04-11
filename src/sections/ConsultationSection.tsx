@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Send, Check } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,25 +49,30 @@ export default function ConsultationSection() {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    const formData = new FormData(e.target as HTMLFormElement);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const location = formData.get('location');
-    
-    const subject = `Arkveda Solar Consultation Request from ${name}`;
-    const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\n\nPlease contact me regarding a solar consultation.`;
 
-    // Simulate form validation time
-    setTimeout(() => {
-      window.location.href = `mailto:info.contactchandan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1000);
+    const serviceID = 'service_dzerk12';
+    const ownerTemplateID = 'template_nvqlqj9';
+    const customerTemplateID = 'template_ihieqob';
+    const publicKey = '5bDvae90dsswcWBQs';
+
+    // Send both templates simultaneously
+    Promise.all([
+      emailjs.sendForm(serviceID, ownerTemplateID, e.target as HTMLFormElement, publicKey),
+      emailjs.sendForm(serviceID, customerTemplateID, e.target as HTMLFormElement, publicKey)
+    ])
+      .then((results) => {
+        console.log('Success! Both sent.', results);
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+      })
+      .catch((error) => {
+        console.error('Failed...', error);
+        setIsSubmitting(false);
+        alert('Failed to send the request: ' + (error.text || error.message || 'Unknown error'));
+      });
   };
 
   return (
