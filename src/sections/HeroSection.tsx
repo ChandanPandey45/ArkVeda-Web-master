@@ -131,6 +131,7 @@ export default function HeroSection() {
           <Button
             onClick={() => document.querySelector('#consultation')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-solar-yellow text-solar-navy hover:bg-solar-yellow/90 font-medium px-8 py-6 text-base rounded-xl"
+            title="Book a consultation for solar energy solutions"
           >
             Book a consultation
             <ArrowRight className="ml-2 w-4 h-4" />
@@ -138,8 +139,9 @@ export default function HeroSection() {
           <button
             onClick={() => document.querySelector('#solutions')?.scrollIntoView({ behavior: 'smooth' })}
             className="text-white/90 hover:text-white font-medium flex items-center gap-2 transition-colors"
+            title="Explore our solar solutions for homes and businesses"
           >
-            Explore solutions
+            Explore solar solutions
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

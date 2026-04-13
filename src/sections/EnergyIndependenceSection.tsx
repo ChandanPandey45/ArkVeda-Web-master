@@ -80,8 +80,9 @@ export default function EnergyIndependenceSection() {
           <button
             onClick={() => document.querySelector('#how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
             className="content-item mt-8 text-white font-medium flex items-center gap-2 hover:text-solar-yellow transition-colors w-fit"
+            title="Learn about our solar installation process"
           >
-            See how it works
+            See how installation works
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

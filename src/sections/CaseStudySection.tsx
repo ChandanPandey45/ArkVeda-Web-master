@@ -78,6 +78,7 @@ export default function CaseStudySection() {
         <button
           onClick={() => navigate('/case-studies')}
           className="content-item mt-8 text-white font-medium flex items-center gap-2 hover:text-solar-yellow transition-colors w-fit"
+          title="Read full case studies of our solar installations"
         >
           Read the full story
           <ArrowRight className="w-4 h-4" />

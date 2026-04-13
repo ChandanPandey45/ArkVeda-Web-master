@@ -91,8 +91,9 @@ export default function SolutionsSection() {
           <button
             onClick={() => navigate('/services')}
             className="content-item mt-8 text-white font-medium flex items-center gap-2 hover:text-solar-yellow transition-colors w-fit"
+            title="View all solar services including residential and commercial"
           >
-            View all services
+            View all solar services
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
