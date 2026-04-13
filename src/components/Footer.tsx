@@ -14,6 +14,7 @@ const serviceLinks = [
   { label: 'Commercial & Industrial', href: '/services' },
   { label: 'Solar + Storage', href: '/services' },
   { label: 'O&M Services', href: '/services' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Get a Quote', href: '/quote' },
 ];
 
@@ -162,6 +163,51 @@ export default function Footer() {
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-solar-yellow/60" />
                     <span>Gorakhpur, Uttar Pradesh, India</span>
                   </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* External Resources */}
+            <div>
+              <h4 className="text-xs font-semibold text-white/30 uppercase tracking-[0.15em] mb-5">
+                Resources
+              </h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="https://mnre.gov.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 flex items-center gap-1.5 group"
+                    title="Ministry of New and Renewable Energy - India"
+                  >
+                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all duration-200" />
+                    MNRE India
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.iea.org/reports/solar-pv-global-supply-chains"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 flex items-center gap-1.5 group"
+                    title="International Energy Agency - Solar Information"
+                  >
+                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all duration-200" />
+                    IEA Solar Info
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nrel.gov/research/photovoltaics.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 flex items-center gap-1.5 group"
+                    title="National Renewable Energy Laboratory"
+                  >
+                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all duration-200" />
+                    NREL Research
+                  </a>
                 </li>
               </ul>
             </div>

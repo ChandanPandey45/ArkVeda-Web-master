@@ -10,6 +10,7 @@ import CaseStudySection from './sections/CaseStudySection';
 import TechnologySection from './sections/TechnologySection';
 import SavingsSection from './sections/SavingsSection';
 import TestimonialSection from './sections/TestimonialSection';
+import ResourcesSection from './sections/ResourcesSection';
 import ConsultationSection from './sections/ConsultationSection';
 import AboutSection from './sections/AboutSection';
 import ContactSection from './sections/ContactSection';
@@ -63,13 +64,16 @@ export default function HomePage() {
         {/* Section 8: Testimonial */}
         <TestimonialSection />
         
-        {/* Section 9: Consultation */}
+        {/* Section 9: Resources & Navigation */}
+        <ResourcesSection />
+        
+        {/* Section 10: Consultation */}
         <ConsultationSection />
         
-        {/* Section 10: About */}
+        {/* Section 11: About */}
         <AboutSection />
         
-        {/* Section 11: Contact */}
+        {/* Section 12: Contact */}
         <ContactSection />
       </main>
       
