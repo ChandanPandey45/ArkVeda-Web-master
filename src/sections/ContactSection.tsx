@@ -94,14 +94,14 @@ export default function ContactSection() {
                   <h3 className="text-xl font-semibold text-white mb-1">Email Us</h3>
                   <p className="text-white/60 mb-2">Drop us a line anytime.</p>
                   <span className="text-solar-yellow font-medium text-lg lg:text-xl break-all">
-                    info.contactchandan@gmail.com
+                    rishabhpandey90057@gmail.com
                   </span>
                 </div>
               </div>
             </a>
 
             <a
-              href="tel:+15550142200"
+              href="tel:+918004249381"
               className="animate-item group block relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 p-8 backdrop-blur-xl hover:bg-white/10 hover:border-blue-400/50 transition-all duration-500 shadow-2xl"
             >
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl -ml-16 -mb-16 group-hover:bg-blue-500/20 transition-colors duration-500" />
@@ -113,7 +113,7 @@ export default function ContactSection() {
                   <h3 className="text-xl font-semibold text-white mb-1">Call Us</h3>
                   <p className="text-white/60 mb-2">Mon-Fri from 9am to 6pm.</p>
                   <span className="text-white font-medium text-lg lg:text-xl">
-                    +1 (555) 014-2200
+                    +91 8004249381
                   </span>
                 </div>
               </div>

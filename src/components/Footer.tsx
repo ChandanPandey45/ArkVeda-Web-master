@@ -1,4 +1,4 @@
-import { Sun, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const navLinks = [
@@ -68,13 +68,15 @@ export default function Footer() {
                 onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className="flex items-center gap-2.5 mb-5 group"
               >
-                <div className="w-8 h-8 rounded-lg bg-solar-yellow/10 border border-solar-yellow/20 flex items-center justify-center group-hover:bg-solar-yellow/20 transition-colors">
-                  <Sun className="w-5 h-5 text-solar-yellow" />
-                </div>
-                <span className="text-xl font-bold text-white">Arkveda</span>
+                <img
+                  src="/arkveda-transparent.png"
+                  alt="Arkveda Logo"
+                  className="h-12 w-auto object-contain"
+                  style={{ filter: 'drop-shadow(0 1px 2px rgba(11,30,47,0.08))' }}
+                />
               </a>
               <p className="text-sm text-white/50 leading-relaxed max-w-xs mb-6">
-                Powering a cleaner future—one rooftop at a time. India's trusted solar EPC partner since 2015.
+                Powering a cleaner future—one rooftop at a time. India's trusted solar EPC partner since 2025.
               </p>
               {/* Social links */}
               <div className="flex gap-3">
@@ -152,7 +154,7 @@ export default function Footer() {
                     className="flex items-start gap-3 text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 group"
                   >
                     <Phone className="w-4 h-4 mt-0.5 shrink-0 text-solar-yellow/60 group-hover:text-solar-yellow transition-colors" />
-                    <span>+1 (555) 014-2200</span>
+                    <span>+91 8004249381</span>
                   </a>
                 </li>
                 <li>
