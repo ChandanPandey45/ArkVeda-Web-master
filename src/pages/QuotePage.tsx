@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ArrowLeft, Home, Building2, Factory, CheckCircle2, Phone, Mail, MapPin, Send } from 'lucide-react';
 
@@ -48,7 +48,7 @@ export default function QuotePage() {
   return (
     <div className="min-h-screen bg-solar-light">
       <div className="grain-overlay" />
-      <Navbar />
+      {/* Navbar removed, now in App.tsx */}
 
       {/* Hero */}
       <section className="relative w-full pt-32 pb-16 lg:pt-40 lg:pb-20 bg-solar-navy overflow-hidden">

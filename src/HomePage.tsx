@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import HeroSection from './sections/HeroSection';
 import EnergyIndependenceSection from './sections/EnergyIndependenceSection';
 import HowItWorksSection from './sections/HowItWorksSection';
@@ -35,8 +35,7 @@ export default function HomePage() {
       {/* Grain overlay */}
       <div className="grain-overlay" />
       
-      {/* Navigation */}
-      <Navbar />
+      {/* Navigation removed, now in App.tsx */}
       
       {/* Main content */}
       <main className="relative flex-1">

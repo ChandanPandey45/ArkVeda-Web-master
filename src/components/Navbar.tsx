@@ -40,10 +40,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-            ? 'bg-white/90 backdrop-blur-md shadow-sm'
-            : 'bg-transparent'
-          }`}
+        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/90 backdrop-blur-md shadow-sm "
       >
         <div className="w-full px-6 lg:px-12">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -62,18 +59,18 @@ export default function Navbar() {
               <div
                 className="flex items-center transition-all duration-500 group-hover:scale-[1.03]"
                 style={{
-                  background: isScrolled ? 'transparent' : 'rgba(255,255,255,0.92)',
-                  backdropFilter: isScrolled ? 'none' : 'blur(8px)',
-                  borderRadius: isScrolled ? '0px' : '10px',
-                  padding: isScrolled ? '0' : '6px 12px',
-                  boxShadow: isScrolled ? 'none' : '0 2px 16px rgba(0,0,0,0.15)',
+                  background: 'transparent',
+                  backdropFilter: 'none',
+                  borderRadius: '0',
+                  padding: '0',
+                  boxShadow: 'none',
                   transition: 'all 0.5s ease',
                 }}
               >
                 <img
                   src="/arkveda-transparent.png"
                   alt="Arkveda Logo"
-                  className="h-7 lg:h-9 w-auto object-contain"
+                  className="h-8 lg:h-9 w-auto object-contain"
                   style={{
                     filter: isScrolled
                       ? 'drop-shadow(0 1px 2px rgba(11,30,47,0.08))'
@@ -88,8 +85,7 @@ export default function Navbar() {
                 <button
                   key={link.label}
                   onClick={() => scrollToSection(link.href)}
-                  className={`text-sm font-medium transition-colors hover:text-solar-yellow ${isScrolled ? 'text-solar-navy' : 'text-white/90'
-                    }`}
+                  className="text-sm font-medium transition-colors text-solar-navy hover:text-solar-yellow"
                 >
                   {link.label}
                 </button>
@@ -112,9 +108,9 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className={`w-6 h-6 ${isScrolled ? 'text-solar-navy' : 'text-white'}`} />
+                <X className="w-6 h-6 text-solar-navy" />
               ) : (
-                <Menu className={`w-6 h-6 ${isScrolled ? 'text-solar-navy' : 'text-white'}`} />
+                <Menu className="w-6 h-6 text-solar-navy" />
               )}
             </button>
           </div>
@@ -143,7 +139,7 @@ export default function Navbar() {
             <button
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="text-2xl font-medium text-white hover:text-solar-yellow transition-colors"
+              className="text-2xl font-medium text-solar-navy hover:text-solar-yellow transition-colors"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {link.label}

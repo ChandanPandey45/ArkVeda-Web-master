@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ArrowLeft, ArrowRight, Home, Building2, Factory, Wrench, ShieldCheck, BarChart3, Zap, Leaf } from 'lucide-react';
 
@@ -66,7 +66,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-solar-light">
       <div className="grain-overlay" />
-      <Navbar />
+      {/* Navbar removed, now in App.tsx */}
 
       {/* Hero */}
       <section className="relative w-full pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-solar-navy">
