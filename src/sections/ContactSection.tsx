@@ -94,7 +94,8 @@ export default function ContactSection() {
                   <h3 className="text-xl font-semibold text-white mb-1">Email Us</h3>
                   <p className="text-white/60 mb-2">Drop us a line anytime.</p>
                   <span className="text-solar-yellow font-medium text-lg lg:text-xl break-all">
-                    rishabhpandey90057@gmail.com
+                    {/* rishabhpandey90057@gmail.com */}
+                    info@arkvedaenergy.in
                   </span>
                 </div>
               </div>

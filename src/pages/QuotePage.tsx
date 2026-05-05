@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 // import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ArrowLeft, Home, Building2, Factory, CheckCircle2, Phone, Mail, MapPin, Send } from 'lucide-react';
+// import { PDFDownloadLink } from '@react-pdf/renderer';
+// import { QuotationPDF } from '../components/pdf/QuotationPDF';
 
 const propertyTypes = [
   { id: 'residential', icon: Home, label: 'Residential', sub: 'Home / Villa' },
@@ -188,16 +190,18 @@ export default function QuotePage() {
                     </div>
                     <div>
                       <div className="text-xs text-white/40">Call us directly</div>
-                      <div className="text-sm font-medium text-white group-hover:text-solar-yellow transition-colors">+1 (555) 014-2200</div>
+                      <div className="text-sm font-medium text-white group-hover:text-solar-yellow transition-colors">+91 8004249381</div>
                     </div>
                   </a>
-                  <a href="mailto:info.contactchandan@gmail.com" className="flex items-center gap-3 group">
+                  <a href="mailto:info@arkvedaenergy.in" className="flex items-center gap-3 group">
                     <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-solar-yellow/20 transition-colors">
                       <Mail className="w-5 h-5 text-solar-yellow" />
                     </div>
                     <div>
                       <div className="text-xs text-white/40">Email us</div>
-                      <div className="text-sm font-medium text-white group-hover:text-solar-yellow transition-colors break-all">info.contactchandan@gmail.com</div>
+                      <div className="text-sm font-medium text-white group-hover:text-solar-yellow transition-colors break-all">
+                        info@arkvedaenergy.in
+                      </div>
                     </div>
                   </a>
                   <div className="flex items-center gap-3">
@@ -206,7 +210,7 @@ export default function QuotePage() {
                     </div>
                     <div>
                       <div className="text-xs text-white/40">Visit our office</div>
-                      <div className="text-sm font-medium text-white">Bangalore, Karnataka</div>
+                      <div className="text-sm font-medium text-white">Gorakhpur, Uttar Pradesh</div>
                     </div>
                   </div>
                 </div>
@@ -218,6 +222,55 @@ export default function QuotePage() {
                 <div className="text-solar-navy font-semibold">Cost to get a quote</div>
                 <p className="text-solar-navy/70 text-sm mt-2">No commitment. No credit card. Just an honest assessment of your solar potential.</p>
               </div>
+
+              {/* Sample Document */}
+              {/* <div className="bg-white border text-center border-gray-100 rounded-3xl p-7 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-4">
+                   <FileText className="w-6 h-6 text-blue-500" />
+                </div>
+                <h3 className="font-bold text-solar-navy mb-2">Want an example?</h3>
+                <p className="text-solar-gray text-sm mb-5">Preview or download a detailed sample proposal showing exactly what our system breakdown looks like.</p>
+                <button
+                  onClick={() => navigate('/pdf-preview')}
+                  className="block w-full bg-solar-navy text-white font-semibold py-3 rounded-xl hover:bg-solar-navy/90 transition-colors duration-200 text-sm mb-3 cursor-pointer"
+                >
+                  Preview Sample PDF
+                </button>
+                <PDFDownloadLink
+                  document={<QuotationPDF data={{
+                    id: "UP_MN_127",
+                    date: new Date().toLocaleDateString('en-IN'),
+                    regionalOffice: "DOLATPUR ROAD, PANDEYPUR, VARANASI, UP",
+                    gstin: "09ABHCS9467Q1Z3",
+                    client: {
+                      name: "Vipin Kumar (Sample)",
+                      phone: "+91 98765 43210",
+                      address: "Gomtinagar, Lucknow, UP"
+                    },
+                    system: { size: "3.66 kW", ratePerKw: 85383.28, validityDays: 7 },
+                    pricing: { basicPrice: 312503, potentialSubsidy: 78000, stateSubsidy: 30000 },
+                    paymentTerms: { advancePct: 10, deliveryPct: 80, meteringPct: 10 },
+                    bankDetails: { accountHolder: "ARKVEDA GREEN ENERGY PVT. LTD.", accountNo: "43403466497", ifsc: "SBIN0063746", vendorCode: "LKO2207113006" },
+                    materials: [
+                      { description: "Smart Solar PV Modules", specification: "N Type - 580 WP", qty: "18", brand: "Waaree", warranty: "30 Years" },
+                      { description: "Solar Inverter", specification: "3 Phase - 10KW", qty: "1", brand: "KSolare", warranty: "10 Years" },
+                      { description: "ACDB/DCDB", specification: "As per MNRE Guidelines", qty: "1", brand: "Eaton / HPL", warranty: "5 Years" },
+                      { description: "Solar Structure", specification: "Hot Dip GI with premium hardware", qty: "Height of 2 mtr.", brand: "Arkveda Trusted", warranty: "" },
+                      { description: "MC4 Connector", specification: "As per MNRE Guidelines", qty: "2 Set", brand: "Dhash PV", warranty: "" }
+                    ],
+                    cables: [
+                      { type: "Both Red & Black DC (Single String)", length: "40 Mtr." },
+                      { type: "AC (2 core 4 SQ MM) for Single Phase", length: "20 Mtr." },
+                      { type: "Earthing", length: "50 Mtr." },
+                      { type: "LA", length: "30 Mtr." }
+                    ]
+                  }} />}
+                  fileName="Sample_Arkveda_Quotation.pdf"
+                  className="block w-full bg-orange-600 text-white font-semibold py-3 rounded-xl hover:bg-orange-700 transition-colors duration-200 text-sm"
+                >
+                  {({ loading }) => (loading ? 'Generating PDF...' : 'Download Sample PDF')}
+                </PDFDownloadLink>
+              </div> */}
             </div>
           </div>
         </div>

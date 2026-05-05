@@ -146,7 +146,8 @@ export default function Footer() {
                     className="flex items-start gap-3 text-sm text-white/60 hover:text-solar-yellow transition-colors duration-200 group"
                   >
                     <Mail className="w-4 h-4 mt-0.5 shrink-0 text-solar-yellow/60 group-hover:text-solar-yellow transition-colors" />
-                    <span>rishabhpandey90057@gmail.com</span>
+                    {/* <span>rishabhpandey90057@gmail.com</span> */}
+                    <span>info@arkvedaenergy.in</span>
                   </a>
                 </li>
                 <li>
