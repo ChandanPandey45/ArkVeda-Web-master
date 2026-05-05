@@ -508,7 +508,7 @@ const PageFooter = ({ pageNo }: { pageNo: number }) => (
       </View>
     </View>
     <View style={s.ftrRight}>
-      <Text style={{ ...s.ftrText, fontWeight: 'bold', fontSize: 9 }}>TOLL FREE : 1800 2020 325</Text>
+      {/* <Text style={{ ...s.ftrText, fontWeight: 'bold', fontSize: 9 }}>TOLL FREE : 1800 2020 325</Text> */}
       <Text style={s.ftrText}>Page {pageNo} of 6</Text>
     </View>
   </View>
@@ -550,7 +550,7 @@ export const QuotationPDF = ({ data }: { data: QuotationData }) => {
             </View>
           </View>
           <View style={{ alignItems: 'flex-end' }}>
-            <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text>
+            {/* <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text> */}
             <Text style={{ color: C.white, fontSize: 7 }}>info@arkveda.com | www.arkveda.com</Text>
           </View>
         </View>
@@ -599,7 +599,7 @@ export const QuotationPDF = ({ data }: { data: QuotationData }) => {
             </View>
           </View>
           <View style={{ alignItems: 'flex-end' }}>
-            <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text>
+            {/* <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text> */}
             <Text style={{ color: C.white, fontSize: 7 }}>info@arkveda.com | www.arkveda.com</Text>
           </View>
         </View>

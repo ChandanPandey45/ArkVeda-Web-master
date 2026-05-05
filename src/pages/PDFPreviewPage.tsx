@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const sampleData: QuotationData = {
   id: 'UP_MN_127',
   date: new Date().toLocaleDateString('en-IN'),
-  regionalOffice: 'DOLATPUR ROAD, PANDEYPUR, VARANASI, UP',
+  regionalOffice: 'GORAKHPUR, UP',
   gstin: '09ABHCS9467Q1Z3',
   client: {
     name: 'Vipin Kumar (Sample)',
