@@ -504,7 +504,7 @@ const PageFooter = ({ pageNo }: { pageNo: number }) => (
       <Image src={logoImg} style={s.ftrLogo} />
       <View>
         <Text style={s.ftrTextOrange}>ARKVEDA GREEN ENERGY LIMITED</Text>
-        <Text style={s.ftrText}>info@arkveda.com | www.arkveda.com</Text>
+        <Text style={s.ftrText}>info@arkvedaenergy.in | www.arkvedaenergy.in</Text>
       </View>
     </View>
     <View style={s.ftrRight}>
@@ -551,7 +551,7 @@ export const QuotationPDF = ({ data }: { data: QuotationData }) => {
           </View>
           <View style={{ alignItems: 'flex-end' }}>
             {/* <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text> */}
-            <Text style={{ color: C.white, fontSize: 7 }}>info@arkveda.com | www.arkveda.com</Text>
+            <Text style={{ color: C.white, fontSize: 7 }}>info@arkvedaenergy.in | www.arkvedaenergy.in</Text>
           </View>
         </View>
       </Page>
@@ -600,7 +600,7 @@ export const QuotationPDF = ({ data }: { data: QuotationData }) => {
           </View>
           <View style={{ alignItems: 'flex-end' }}>
             {/* <Text style={{ color: C.white, fontSize: 11, fontWeight: 'bold' }}>TOLL FREE : 1800 2020 325</Text> */}
-            <Text style={{ color: C.white, fontSize: 7 }}>info@arkveda.com | www.arkveda.com</Text>
+            <Text style={{ color: C.white, fontSize: 7 }}>info@arkvedaenergy.in | www.arkvedaenergy.in</Text>
           </View>
         </View>
       </Page>
@@ -914,7 +914,7 @@ export const QuotationPDF = ({ data }: { data: QuotationData }) => {
           ))}
           <View style={{ marginTop: 16, borderTopWidth: 2, borderTopColor: C.solarGreen, paddingTop: 12, alignItems: 'center' }}>
             <Text style={{ fontSize: 13, fontWeight: 'bold', color: C.solarGreen, marginBottom: 3 }}>Thank you for choosing Arkveda Solar!</Text>
-            <Text style={{ fontSize: 9, color: C.grayText }}>1800 2020 325 | www.arkveda.com</Text>
+            <Text style={{ fontSize: 9, color: C.grayText }}>www.arkvedaenergy.in</Text>
           </View>
         </View>
         <PageFooter pageNo={6} />
